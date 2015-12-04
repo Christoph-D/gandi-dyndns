@@ -158,7 +158,7 @@ def delete_record(apikey, zone_id, zone_version, record, rtype):
 
 def insert_record(apikey, zone_id, zone_version, record, rtype, value):
     zoneRecord = {"name": record, 
-                  "ttl": 10800, 
+                  "ttl": 1200, 
                   "type": rtype, 
                   "value": value}
 
