@@ -132,13 +132,13 @@ def get_zoneid_by_domain(apikey, domain):
 
 def get_public_ipv4():
     try:
-        return urllib2.urlopen('http://ipv4.icanhazip.com').read().strip()
+        return urllib2.urlopen('https://ipv4.icanhazip.com').read().strip()
     except:
         return None
 
 def get_public_ipv6():
     try:
-        return urllib2.urlopen('http://ipv6.icanhazip.com').read().strip()
+        return urllib2.urlopen('https://ipv6.icanhazip.com').read().strip()
     except:
         return None
 
